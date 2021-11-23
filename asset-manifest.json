@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/craigsgist/static/css/main.8c8b27cf.chunk.css",
+    "main.js": "/craigsgist/static/js/main.edc9331e.chunk.js",
+    "main.js.map": "/craigsgist/static/js/main.edc9331e.chunk.js.map",
+    "runtime-main.js": "/craigsgist/static/js/runtime-main.dfcdfaf7.js",
+    "runtime-main.js.map": "/craigsgist/static/js/runtime-main.dfcdfaf7.js.map",
+    "static/js/2.7a208302.chunk.js": "/craigsgist/static/js/2.7a208302.chunk.js",
+    "static/js/2.7a208302.chunk.js.map": "/craigsgist/static/js/2.7a208302.chunk.js.map",
+    "static/js/3.053c6785.chunk.js": "/craigsgist/static/js/3.053c6785.chunk.js",
+    "static/js/3.053c6785.chunk.js.map": "/craigsgist/static/js/3.053c6785.chunk.js.map",
+    "index.html": "/craigsgist/index.html",
+    "static/css/main.8c8b27cf.chunk.css.map": "/craigsgist/static/css/main.8c8b27cf.chunk.css.map",
+    "static/js/2.7a208302.chunk.js.LICENSE.txt": "/craigsgist/static/js/2.7a208302.chunk.js.LICENSE.txt",
+    "static/media/logo.6ce24c58.svg": "/craigsgist/static/media/logo.6ce24c58.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.dfcdfaf7.js",
+    "static/js/2.7a208302.chunk.js",
+    "static/css/main.8c8b27cf.chunk.css",
+    "static/js/main.edc9331e.chunk.js"
+  ]
+}
