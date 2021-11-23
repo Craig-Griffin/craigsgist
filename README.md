@@ -1,70 +1,42 @@
-# Getting Started with Create React App
+# Craig's Gist
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+### Welcome to the Craig's Gist GitHub repository! 
 
-## Available Scripts
+The purpose of this website is to give me "internet landlord" status. By that I mean I will have a space that is completely ruled by me.
+I can do whatever I want with this space from changing any styles to uploading my own content. I will be completely free from the restrictions of
+the modern internet. There will be no Google/Facebook bloatware and no excessive JavaScript crap.
 
-In the project directory, you can run:
+## Site Overview
 
-### `npm start`
+Craig's gist will have a simple-to-use structure consisting of a top bar that will take the user to the main sections of the website.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+### Homepage
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+Links to all the other sections. Make this dynamic based on the most recent updated section?
 
-### `npm test`
+### About
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+ * CV
+ * Aim of the website
+ * A little about me
 
-### `npm run build`
+### Outdoor pursuits
+The good part of the website. 
+ * Gear Review including my cars
+ * Walking guides and my stats
+ * Mountain biking guides
+ * Interactive OS maps
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### Photos
+A showcase of the weekends projects 
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+ * Photo page inspired by Brittons Bash RC
+ * Automate this to upload photos straight from my phone??
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+### Lab
+A space that I can showcase any technical pieces. I have a cool idea about making React components dynamic at render time.
 
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+ * Any cool web based projects that I am currently working on
+ * Dynamic loading React Components
+ * 3D STEP file viewer
+ * More cool thinsg to come!
