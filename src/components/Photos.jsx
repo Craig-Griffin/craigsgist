@@ -1,129 +1,130 @@
 import React from "react";
-
+import ModalImage from "react-modal-image";
 
 export const Photos = () => {
     return (
-        <section className="">
 
 
-            <section className="">
-                <div className="row">
-                    <div className="col-lg-4 col-md-12 mb-4 mb-lg-0">
-                        <div
-                            className="bg-image hover-overlay ripple shadow-1-strong rounded"
-                            data-ripple-color="light"
-                        >
-                            <img
-                                src="https://mdbootstrap.com/img/screens/yt/screen-video-1.jpg"
-                                className="w-100"
-                            />
-                            <a href="#!" data-mdb-toggle="modal" data-mdb-target="#exampleModal1">
+        <div className="container p-3">
 
-                            </a>
-                        </div>
-                    </div>
+            <h1>2021</h1>
 
-                    <div className="col-lg-4 mb-4 mb-lg-0">
-                        <div
-                            className="bg-image hover-overlay ripple shadow-1-strong rounded"
-                            data-ripple-color="light"
-                        >
-                            <img
-                                src="https://mdbootstrap.com/img/screens/yt/screen-video-2.jpg"
-                                className="w-100"
-                            />
-                            <a href="#!" data-mdb-toggle="modal" data-mdb-target="#exampleModal2">
-
-                            </a>
-                        </div>
-                    </div>
-
-                    <div className="col-lg-4 mb-4 mb-lg-0">
-                        <div
-                            className="bg-image hover-overlay ripple shadow-1-strong rounded"
-                            data-ripple-color="light"
-                        >
-                            <img
-                                src="https://mdbootstrap.com/img/screens/yt/screen-video-3.jpg"
-                                className="w-100"
-                            />
-                            <a href="#!" data-mdb-toggle="modal" data-mdb-target="#exampleModal3">
-
-                            </a>
-                        </div>
-                    </div>
+            <h3>Glencoe</h3>
+            <p>Highlights of this year..</p>
+            <div className="row">
+                <div className="col-md">
+                    <ModalImage
+                        className={"img-thumbnail"}
+                        small={"https://www.visitscotland.com/cms-images/active/walking/munros-skye-cuillin"}
+                        large={"https://www.visitscotland.com/cms-images/active/walking/munros-skye-cuillin"}
+                        alt="Hello World!"
+                        hideDownload={true}
+                    />
                 </div>
-            </section>
-
-            <section className="">
-
-                <div
-                    className="modal fade"
-                    id="exampleModal1"
-                    tabIndex="-1"
-                    aria-labelledby="exampleModal1Label"
-                    aria-hidden="true"
-                >
-                    <div className="modal-dialog modal-lg">
-                        <div className="modal-content">
-                            <div className="ratio ratio-16x9">
-
-                            </div>
-
-                            <div className="text-center py-3">
-                                <button type="button" className="btn btn-secondary" data-mdb-dismiss="modal">
-                                    Close
-                                </button>
-                            </div>
-                        </div>
-                    </div>
+                <div className="col-md">  <ModalImage
+                    className={"img-thumbnail"}
+                    small={"https://www.visitscotland.com/cms-images/active/walking/munros-skye-cuillin"}
+                    large={"https://www.visitscotland.com/cms-images/active/walking/munros-skye-cuillin"}
+                    alt="Hello World!"
+                    hideDownload={true}
+                /></div>
+                <div className="col-md">
+                    <ModalImage
+                        className={"img-thumbnail"}
+                        small={"https://www.visitscotland.com/cms-images/active/walking/munros-skye-cuillin"}
+                        large={"https://www.visitscotland.com/cms-images/active/walking/munros-skye-cuillin"}
+                        alt="Hello World!"
+                        hideDownload={true}
+                    />                </div>
+            </div>
+            <br/>
+            <div className="row">
+                <div className="col-md">
+                    <ModalImage
+                        className={"img-thumbnail"}
+                        small={"https://www.visitscotland.com/cms-images/active/walking/munros-skye-cuillin"}
+                        large={"https://www.visitscotland.com/cms-images/active/walking/munros-skye-cuillin"}
+                        alt="Hello World!"
+                        hideDownload={true}
+                    />
                 </div>
+                <div className="col-sm">  <ModalImage
+                    className={"img-thumbnail"}
+                    small={"https://www.visitscotland.com/cms-images/active/walking/munros-skye-cuillin"}
+                    large={"https://www.visitscotland.com/cms-images/active/walking/munros-skye-cuillin"}
+                    alt="Hello World!"
+                    hideDownload={true}
 
-                <div
-                    className="modal fade"
-                    id="exampleModal2"
-                    tabindex="-1"
-                    aria-labelledby="exampleModal2Label"
-                    aria-hidden="true"
-                >
-                    <div className="modal-dialog modal-lg">
-                        <div className="modal-content">
-                            <div className="ratio ratio-16x9">
-
-                            </div>
-
-                            <div className="text-center py-3">
-                                <button type="button" className="btn btn-secondary" data-mdb-dismiss="modal">
-                                    Close
-                                </button>
-                            </div>
-                        </div>
-                    </div>
+                /></div>
+                <div className="col-md">
+                    <ModalImage
+                        className={"img-thumbnail"}
+                        small={"https://www.visitscotland.com/cms-images/active/walking/munros-skye-cuillin"}
+                        large={"https://www.visitscotland.com/cms-images/active/walking/munros-skye-cuillin"}
+                        alt="Hello World!"
+                        hideDownload={true}
+                    />                </div>
+            </div>  <br/>
+            <h3>Glencoe</h3>
+            <p>Highlights of this year..</p>
+            <div className="row">
+                <div className="col-md">
+                    <ModalImage
+                        className={"img-thumbnail"}
+                        small={"https://www.visitscotland.com/cms-images/active/walking/munros-skye-cuillin"}
+                        large={"https://www.visitscotland.com/cms-images/active/walking/munros-skye-cuillin"}
+                        alt="Hello World!"
+                        hideDownload={true}
+                    />
                 </div>
-
-                <div
-                    className="modal fade"
-                    id="exampleModal3"
-                    tabIndex="-1"
-                    aria-labelledby="exampleModal3Label"
-                    aria-hidden="true"
-                >
-                    <div className="modal-dialog modal-lg">
-                        <div className="modal-content">
-                            <div className="ratio ratio-16x9">
-
-                            </div>
-
-                            <div className="text-center py-3">
-                                <button type="button" className="btn btn-secondary" data-mdb-dismiss="modal">
-                                    Close
-                                </button>
-                            </div>
-                        </div>
-                    </div>
+                <div className="col-md">  <ModalImage
+                    className={"img-thumbnail"}
+                    small={"https://www.visitscotland.com/cms-images/active/walking/munros-skye-cuillin"}
+                    large={"https://www.visitscotland.com/cms-images/active/walking/munros-skye-cuillin"}
+                    alt="Hello World!"
+                    hideDownload={true}
+                /></div>
+                <div className="col-md">
+                    <ModalImage
+                        className={"img-thumbnail"}
+                        small={"https://www.visitscotland.com/cms-images/active/walking/munros-skye-cuillin"}
+                        large={"https://www.visitscotland.com/cms-images/active/walking/munros-skye-cuillin"}
+                        alt="Hello World!"
+                        hideDownload={true}
+                    />                </div>
+            </div>
+            <br/>
+            <div className="row">
+                <div className="col-md">
+                    <ModalImage
+                        className={"img-thumbnail"}
+                        small={"https://www.visitscotland.com/cms-images/active/walking/munros-skye-cuillin"}
+                        large={"https://www.visitscotland.com/cms-images/active/walking/munros-skye-cuillin"}
+                        alt="Hello World!"
+                        hideDownload={true}
+                    />
                 </div>
-            </section>
+                <div className="col-sm">  <ModalImage
+                    className={"img-thumbnail"}
+                    small={"https://www.visitscotland.com/cms-images/active/walking/munros-skye-cuillin"}
+                    large={"https://www.visitscotland.com/cms-images/active/walking/munros-skye-cuillin"}
+                    alt="Hello World!"
+                    hideDownload={true}
 
-        </section>
+                /></div>
+                <div className="col-md">
+                    <ModalImage
+                        className={"img-thumbnail"}
+                        small={"https://www.visitscotland.com/cms-images/active/walking/munros-skye-cuillin"}
+                        large={"https://www.visitscotland.com/cms-images/active/walking/munros-skye-cuillin"}
+                        alt="Hello World!"
+                        hideDownload={true}
+                    />                </div>
+            </div>
+
+        </div>
+
+
+
         )
 }

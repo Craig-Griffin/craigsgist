@@ -8,37 +8,63 @@ import {Photos} from "./components/Photos"
 import {Lab} from "./components/Lab"
 import {NotFound} from "./components/NotFound"
 
+import  'react-bootstrap/Button';
+import {Container, Nav, Navbar, NavDropdown} from "react-bootstrap";
+
+import "./scss/custom.scss"
 
 function App() {
     return (
         <div className="App">
-            <link
-                rel="stylesheet"
-                href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
-                integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
-                crossOrigin="anonymous"
-            />
+            <Navbar collapseOnSelect expand="lg" bg="dark" variant="dark">
+                <Container>
+                    <Navbar.Brand className={"logo"}> <Link className={"logo"} to="/">Craig's Gist</Link></Navbar.Brand>
+                    <Navbar.Toggle aria-controls="responsive-navbar-nav" />
+                    <Navbar.Collapse id="responsive-navbar-nav">
+
+                        <Nav className="me-auto"/>
+
+                        <Nav>
+                            <NavDropdown title="About" id="collasible-nav-dropdown">
+                                <NavDropdown.Item><Link to="about">About</Link></NavDropdown.Item>
+                                <NavDropdown.Item><Link to="about">Goals of Craig's Gist</Link></NavDropdown.Item>
+                                <NavDropdown.Item><Link to="about">Career</Link></NavDropdown.Item>
+                                <NavDropdown.Divider />
+                                <NavDropdown.Item><Link to="about">CV Download (PDF + TeX)</Link></NavDropdown.Item>
+                            </NavDropdown>
+
+                            <NavDropdown title="Outdoor Persuits" id="collasible-nav-dropdown">
+                                <NavDropdown.Item ><Link to="outdoors">Hill walking</Link></NavDropdown.Item>
+                                <NavDropdown.Item ><Link to="outdoors">Mountain biking</Link></NavDropdown.Item>
+                                <NavDropdown.Item ><Link to="outdoors">Rock climbing</Link></NavDropdown.Item>
+                                <NavDropdown.Item ><Link to="outdoors">Road biking</Link></NavDropdown.Item>
+                                <NavDropdown.Divider />
+                                <NavDropdown.Item ><Link to="outdoors">Gear Reviews</Link></NavDropdown.Item>
+                            </NavDropdown>
+
+                            <NavDropdown title="Photos" id="collasible-nav-dropdown">
+                                <NavDropdown.Item ><Link to="photos">2021</Link></NavDropdown.Item>
+                                <NavDropdown.Item ><Link to="photos">2020</Link></NavDropdown.Item>
+                                <NavDropdown.Item ><Link to="photos">2019</Link></NavDropdown.Item>
+
+                            </NavDropdown>
+
+                            <NavDropdown title="Lab" id="collasible-nav-dropdown">
+                                <NavDropdown.Item > <Link to="lab">OS Map Integration</Link></NavDropdown.Item>
+                                <NavDropdown.Item > <Link to="lab">Step File Viewer</Link></NavDropdown.Item>
+                                <NavDropdown.Item > <Link to="lab">Dynamic React Component Loading</Link></NavDropdown.Item>
+
+                            </NavDropdown>
+
+                        </Nav>
+                    </Navbar.Collapse>
+                </Container>
+            </Navbar>
 
 
-            <nav>
-                <ul>
-                    <li>
-                        <Link to="/">Home</Link>
-                    </li>
-                    <li>
-                        <Link to="about">About</Link>
-                    </li>
-                    <li>
-                        <Link to="outdoors">Outdoor Pursuits</Link>
-                    </li>
-                    <li>
-                        <Link to="photos">Photos</Link>
-                    </li>
-                    <li>
-                        <Link to="lab">Lab</Link>
-                    </li>
-                </ul>
-            </nav>
+
+
+
 
 
             <div className="main">
