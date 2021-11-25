@@ -16,7 +16,7 @@ import "./scss/custom.scss"
 function App() {
     return (
         <div className="App">
-            <Navbar collapseOnSelect expand="lg" bg="dark" variant="dark">
+            <Navbar collapseOnSelect expand="lg" bg="light" variant="light">
                 <Container>
                     <Navbar.Brand className={"logo"}> <Link className={"logo"} to="/">Craig's Gist</Link></Navbar.Brand>
                     <Navbar.Toggle aria-controls="responsive-navbar-nav" />
@@ -26,33 +26,33 @@ function App() {
 
                         <Nav>
                             <NavDropdown title="About" id="collasible-nav-dropdown">
-                                <NavDropdown.Item><Link to="about">About</Link></NavDropdown.Item>
-                                <NavDropdown.Item><Link to="about">Goals of Craig's Gist</Link></NavDropdown.Item>
-                                <NavDropdown.Item><Link to="about">Career</Link></NavDropdown.Item>
+                                <NavDropdown.Item className={"dropdown-link"}><Nav.Link className={"dropdown-link"} as={Link} to="about">About</Nav.Link></NavDropdown.Item>
+                                <NavDropdown.Item><Nav.Link as={Link} to="about">Goals of Craig's Gist</Nav.Link></NavDropdown.Item>
+                                <NavDropdown.Item><Nav.Link as={Link} to="about">Career</Nav.Link></NavDropdown.Item>
                                 <NavDropdown.Divider />
-                                <NavDropdown.Item><Link to="about">CV Download (PDF + TeX)</Link></NavDropdown.Item>
+                                <NavDropdown.Item><Nav.Link as={Link} to="about">CV Download (PDF + TeX)</Nav.Link></NavDropdown.Item>
                             </NavDropdown>
 
                             <NavDropdown title="Outdoor Persuits" id="collasible-nav-dropdown">
-                                <NavDropdown.Item ><Link to="outdoors">Hill walking</Link></NavDropdown.Item>
-                                <NavDropdown.Item ><Link to="outdoors">Mountain biking</Link></NavDropdown.Item>
-                                <NavDropdown.Item ><Link to="outdoors">Rock climbing</Link></NavDropdown.Item>
-                                <NavDropdown.Item ><Link to="outdoors">Road biking</Link></NavDropdown.Item>
+                                <NavDropdown.Item><Nav.Link as={Link} to="outdoors">Hill walking</Nav.Link></NavDropdown.Item>
+                                <NavDropdown.Item><Nav.Link as={Link} to="outdoors">Mountain biking</Nav.Link></NavDropdown.Item>
+                                <NavDropdown.Item><Nav.Link as={Link}  to="outdoors">Rock climbing</Nav.Link></NavDropdown.Item>
+                                <NavDropdown.Item><Nav.Link as={Link}  to="outdoors">Road biking</Nav.Link></NavDropdown.Item>
                                 <NavDropdown.Divider />
-                                <NavDropdown.Item ><Link to="outdoors">Gear Reviews</Link></NavDropdown.Item>
+                                <NavDropdown.Item><Nav.Link as={Link} to="outdoors">Gear Reviews</Nav.Link></NavDropdown.Item>
                             </NavDropdown>
 
                             <NavDropdown title="Photos" id="collasible-nav-dropdown">
-                                <NavDropdown.Item ><Link to="photos">2021</Link></NavDropdown.Item>
-                                <NavDropdown.Item ><Link to="photos">2020</Link></NavDropdown.Item>
-                                <NavDropdown.Item ><Link to="photos">2019</Link></NavDropdown.Item>
+                                <NavDropdown.Item><Nav.Link as={Link}  to="photos">2021</Nav.Link></NavDropdown.Item>
+                                <NavDropdown.Item><Nav.Link as={Link}  to="photos">2020</Nav.Link></NavDropdown.Item>
+                                <NavDropdown.Item><Nav.Link as={Link}  to="photos">2019</Nav.Link></NavDropdown.Item>
 
                             </NavDropdown>
 
                             <NavDropdown title="Lab" id="collasible-nav-dropdown">
-                                <NavDropdown.Item > <Link to="lab">OS Map Integration</Link></NavDropdown.Item>
-                                <NavDropdown.Item > <Link to="lab">Step File Viewer</Link></NavDropdown.Item>
-                                <NavDropdown.Item > <Link to="lab">Dynamic React Component Loading</Link></NavDropdown.Item>
+                                <NavDropdown.Item><Nav.Link as={Link}  to="lab">OS Map Integration</Nav.Link></NavDropdown.Item>
+                                <NavDropdown.Item><Nav.Link as={Link}  to="lab">Step File Viewer</Nav.Link></NavDropdown.Item>
+                                <NavDropdown.Item><Nav.Link as={Link}  to="lab">Dynamic React Component Loading</Nav.Link></NavDropdown.Item>
 
                             </NavDropdown>
 

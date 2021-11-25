@@ -10,7 +10,7 @@
 
 .logo{
   text-decoration: none;
-  color:white;
+  color: #0016ff;
   font-family: Garamond, monospace;
   letter-spacing: 3px;
   filter: drop-shadow(1px 1px 2px #9b9ca0);
@@ -19,4 +19,12 @@
 .navbar-link{
   text-decoration: none;
   font-family: Garamond, monospace;
+}
+
+.header-background{
+  background-image: url("http://www.publicdomainpictures.net/pictures/30000/velka/desert-sunrise-7-1-12e.jpg"), url("https://lh3.googleusercontent.com/https://daezaxn4za7rq.cloudfront.net/s3/resources.farm1.mycms.me/everysunrise-com/Resources/Sunrises/2020-08/03-08-20-AUS-A.jpg;crop=7,0,5780,1654;width=1200");
+}
+
+.dropdown-link{
+color:black
 }
