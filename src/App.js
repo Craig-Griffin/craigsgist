@@ -4,7 +4,7 @@ import { Routes, Route, Link } from "react-router-dom"
 import {Home} from "./components/Home"
 import {About} from "./components/About"
 import {Outdoors} from "./components/Outdoors"
-import {Photos} from "./components/Photos"
+import Photos from "./components/Photos"
 import {Lab} from "./components/Lab"
 import {NotFound} from "./components/NotFound"
 
@@ -78,6 +78,16 @@ function App() {
                     <Route path="*" element={<NotFound/>}/>
                 </Routes>
             </div>
+
+            <footer >
+
+
+                    <div className={"text-center"}>
+
+                        <p className={"lead"}> © Craig Griffin 2021    </p>
+                    </div>
+
+            </footer>
 
 
         </div>

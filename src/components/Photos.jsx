@@ -1,130 +1,180 @@
 import React from "react";
 import ModalImage from "react-modal-image";
 
-export const Photos = () => {
-    return (
+
+import photoData from "./../data/photos.json"
 
 
-        <div className="container p-3">
 
-            <h1>2021</h1>
 
-            <h3>January</h3>
-            <p>Highlights of this year..</p>
-            <div className="row">
+class Photos extends React.Component {
+
+    constructor(props) {
+        super(props);
+
+       this.photoData = JSON.parse(JSON.stringify(photoData))
+
+    }
+
+    renderCaption(){
+        let outputHTML=[]
+
+        for(let i=0;  i < this.photoData.twentyOne.length; i++){
+            outputHTML.push( <div> <h3>{this.photoData.twentyOne[i].Title}</h3>
+            <p>{this.photoData.twentyOne[i].Description}</p>
+
+
+                {this.renderImages(this.photoData.twentyOne[i].Images)}
+                   <br /> </div>)
+        }
+
+        return outputHTML
+
+    }
+
+
+    renderImages(images){
+        let outputHTML =[];
+
+        let tempConfig= [[images[0],images[1],images[2]], [images[3],images[4]]]
+
+
+        let perChunk = 3
+
+        let result =  images.reduce((resultArray, item, index) => {
+            const chunkIndex = Math.floor(index/perChunk)
+
+            if(!resultArray[chunkIndex]) {
+                resultArray[chunkIndex] = [] // start a new chunk
+            }
+
+            resultArray[chunkIndex].push(item)
+
+            return resultArray
+        }, [])
+
+
+
+
+
+        for(let i=0; i<result.length; i++){
+                outputHTML.push(
+                    <div className="row">
+                        {this.renderRows(result[i])}
+                   </div>
+                )
+
+
+        }
+        return outputHTML
+    }
+
+
+    renderRows(images){
+        let outputHTML =[];
+
+        console.log(images)
+
+
+
+
+        if(images.length === 3){
+            for(let i=0; i<images.length; i++){
+
+                outputHTML.push(
+
+                    <div className="col-md">
+                        <ModalImage
+                            className={"img-thumbnail img-fluid"}
+                            small={images[i].src}
+                            large={images[i].src}
+                            alt={images[i].alt}
+                            hideDownload={true}
+                        />
+                    </div>
+                )
+            }
+        }else if(images.length === 2){
+            outputHTML.push(
+<>
                 <div className="col-md">
                     <ModalImage
                         className={"img-thumbnail img-fluid"}
-                        small={"https://lh3.googleusercontent.com/_4Ri8dbMHUQiyVB-Xy5LlYsxZU3CqWxJXTFdYH7zGSEHLPTusbp2SVgfJL0g2iDp5-8mmExqreT015bgHi2HyGmgBWPGBHidT9c0g40i1hp18v_T1sPLtVbaBPnsASsfDLBV6wVmDQ=w2400"}
-                        large={"https://lh3.googleusercontent.com/_4Ri8dbMHUQiyVB-Xy5LlYsxZU3CqWxJXTFdYH7zGSEHLPTusbp2SVgfJL0g2iDp5-8mmExqreT015bgHi2HyGmgBWPGBHidT9c0g40i1hp18v_T1sPLtVbaBPnsASsfDLBV6wVmDQ=w2400"}
-                        alt="Hello World!"
+                        small={images[0].src}
+                        large={images[0].src}
+                        alt={images[0].alt}
                         hideDownload={true}
                     />
                 </div>
-                <div className="col-md">  <ModalImage
+
+            <div className="col-md">
+                <ModalImage
                     className={"img-thumbnail img-fluid"}
-                    small={"https://www.visitscotland.com/cms-images/active/walking/munros-skye-cuillin"}
-                    large={"https://www.visitscotland.com/cms-images/active/walking/munros-skye-cuillin"}
-                    alt="Hello World!"
+                    small={images[1].src}
+                    large={images[1].src}
+                    alt={images[1].alt}
                     hideDownload={true}
-                /></div>
-                <div className="col-md">
-                    <ModalImage
-                        className={"img-thumbnail"}
-                        small={"https://www.visitscotland.com/cms-images/active/walking/munros-skye-cuillin"}
-                        large={"https://www.visitscotland.com/cms-images/active/walking/munros-skye-cuillin"}
-                        alt="Hello World!"
-                        hideDownload={true}
-                    />                </div>
-            </div>
-            <br/>
-            <div className="row">
-                <div className="col-md">
-                    <ModalImage
-                        className={"img-thumbnail"}
-                        small={"https://www.visitscotland.com/cms-images/active/walking/munros-skye-cuillin"}
-                        large={"https://www.visitscotland.com/cms-images/active/walking/munros-skye-cuillin"}
-                        alt="Hello World!"
-                        hideDownload={true}
-                    />
-                </div>
-                <div className="col-sm">  <ModalImage
-                    className={"img-thumbnail"}
-                    small={"https://www.visitscotland.com/cms-images/active/walking/munros-skye-cuillin"}
-                    large={"https://www.visitscotland.com/cms-images/active/walking/munros-skye-cuillin"}
-                    alt="Hello World!"
-                    hideDownload={true}
-
-                /></div>
-                <div className="col-md">
-                    <ModalImage
-                        className={"img-thumbnail"}
-                        small={"https://www.visitscotland.com/cms-images/active/walking/munros-skye-cuillin"}
-                        large={"https://www.visitscotland.com/cms-images/active/walking/munros-skye-cuillin"}
-                        alt="Hello World!"
-                        hideDownload={true}
-                    />                </div>
-            </div>  <br/>
-            <h3>February</h3>
-            <p>Highlights of this year..</p>
-            <div className="row">
-                <div className="col-md">
-                    <ModalImage
-                        className={"img-thumbnail"}
-                        small={"https://www.visitscotland.com/cms-images/active/walking/munros-skye-cuillin"}
-                        large={"https://www.visitscotland.com/cms-images/active/walking/munros-skye-cuillin"}
-                        alt="Hello World!"
-                        hideDownload={true}
-                    />
-                </div>
-                <div className="col-md">  <ModalImage
-                    className={"img-thumbnail"}
-                    small={"https://www.visitscotland.com/cms-images/active/walking/munros-skye-cuillin"}
-                    large={"https://www.visitscotland.com/cms-images/active/walking/munros-skye-cuillin"}
-                    alt="Hello World!"
-                    hideDownload={true}
-                /></div>
-                <div className="col-md">
-                    <ModalImage
-                        className={"img-thumbnail"}
-                        small={"https://www.visitscotland.com/cms-images/active/walking/munros-skye-cuillin"}
-                        large={"https://www.visitscotland.com/cms-images/active/walking/munros-skye-cuillin"}
-                        alt="Hello World!"
-                        hideDownload={true}
-                    />                </div>
-            </div>
-            <br/>
-            <div className="row">
-                <div className="col-md">
-                    <ModalImage
-                        className={"img-thumbnail"}
-                        small={"https://www.visitscotland.com/cms-images/active/walking/munros-skye-cuillin"}
-                        large={"https://www.visitscotland.com/cms-images/active/walking/munros-skye-cuillin"}
-                        alt="Hello World!"
-                        hideDownload={true}
-                    />
-                </div>
-                <div className="col-sm">  <ModalImage
-                    className={"img-thumbnail"}
-                    small={"https://www.visitscotland.com/cms-images/active/walking/munros-skye-cuillin"}
-                    large={"https://www.visitscotland.com/cms-images/active/walking/munros-skye-cuillin"}
-                    alt="Hello World!"
-                    hideDownload={true}
-
-                /></div>
-                <div className="col-md">
-                    <ModalImage
-                        className={"img-thumbnail"}
-                        small={"https://www.visitscotland.com/cms-images/active/walking/munros-skye-cuillin"}
-                        large={"https://www.visitscotland.com/cms-images/active/walking/munros-skye-cuillin"}
-                        alt="Hello World!"
-                        hideDownload={true}
-                    />                </div>
+                />
             </div>
 
-        </div>
+            <div className="col-md">
+
+            </div></>
+            )
+
+        }else{
+            outputHTML.push(
+                <>
+                    <div className="col-md">
+                        <ModalImage
+                            className={"img-thumbnail img-fluid"}
+                            small={images[0].src}
+                            large={images[0].src}
+                            alt={images[0].alt}
+                            hideDownload={true}
+                        />
+                    </div>
+
+                    <div className="col-md">
+
+                    </div>
+
+                    <div className="col-md">
+
+                    </div></>
+            )
+        }
+
+
+
+
+
+
+        return outputHTML
+    }
+
+
+
+    render() {
+        return (
+
+
+            <div className="container p-3">
+
+                {this.renderCaption()}
+
+
+
+
+
+
+            </div>
 
 
 
         )
+    }
 }
+
+
+export default Photos;
