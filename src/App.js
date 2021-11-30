@@ -25,7 +25,7 @@ function App() {
                         <Nav className="me-auto"/>
 
                         <Nav>
-                            <NavDropdown title="About" id="collasible-nav-dropdown">
+                            <NavDropdown title="About" id="collapsible-nav-dropdown">
                                 <NavDropdown.Item className={"dropdown-link"}><Nav.Link className={"dropdown-link"} as={Link} to="about">About</Nav.Link></NavDropdown.Item>
                                 <NavDropdown.Item><Nav.Link as={Link} to="about">Goals of Craig's Gist</Nav.Link></NavDropdown.Item>
                                 <NavDropdown.Item><Nav.Link as={Link} to="about">Career</Nav.Link></NavDropdown.Item>
@@ -33,7 +33,7 @@ function App() {
                                 <NavDropdown.Item><Nav.Link as={Link} to="about">CV Download (PDF + TeX)</Nav.Link></NavDropdown.Item>
                             </NavDropdown>
 
-                            <NavDropdown title="Outdoor Persuits" id="collasible-nav-dropdown">
+                            <NavDropdown title="Outdoor Pursuits" id="collapsible-nav-dropdown">
                                 <NavDropdown.Item><Nav.Link as={Link} to="outdoors">Hill walking</Nav.Link></NavDropdown.Item>
                                 <NavDropdown.Item><Nav.Link as={Link} to="outdoors">Mountain biking</Nav.Link></NavDropdown.Item>
                                 <NavDropdown.Item><Nav.Link as={Link}  to="outdoors">Rock climbing</Nav.Link></NavDropdown.Item>
@@ -42,14 +42,14 @@ function App() {
                                 <NavDropdown.Item><Nav.Link as={Link} to="outdoors">Gear Reviews</Nav.Link></NavDropdown.Item>
                             </NavDropdown>
 
-                            <NavDropdown title="Photos" id="collasible-nav-dropdown">
+                            <NavDropdown title="Photos" id="collapsible-nav-dropdown">
                                 <NavDropdown.Item><Nav.Link as={Link}  to="photos">2021</Nav.Link></NavDropdown.Item>
                                 <NavDropdown.Item><Nav.Link as={Link}  to="photos">2020</Nav.Link></NavDropdown.Item>
                                 <NavDropdown.Item><Nav.Link as={Link}  to="photos">2019</Nav.Link></NavDropdown.Item>
 
                             </NavDropdown>
 
-                            <NavDropdown title="Lab" id="collasible-nav-dropdown">
+                            <NavDropdown title="Lab" id="collapsible-nav-dropdown">
                                 <NavDropdown.Item><Nav.Link as={Link}  to="lab">OS Map Integration</Nav.Link></NavDropdown.Item>
                                 <NavDropdown.Item><Nav.Link as={Link}  to="lab">Step File Viewer</Nav.Link></NavDropdown.Item>
                                 <NavDropdown.Item><Nav.Link as={Link}  to="lab">Dynamic React Component Loading</Nav.Link></NavDropdown.Item>
@@ -72,7 +72,7 @@ function App() {
                 <Routes>
                     <Route path="/" element={<Home/>}/>
                     <Route path="about" element={<About/>}/>
-                    <Route path="outdoors" element={<Outdoors/>}/>
+                    <Route path="outdoors/*" element={<Outdoors/>}/>
                     <Route path="photos" element={<Photos/>}/>
                     <Route path="lab" element={<Lab/>}/>
                     <Route path="*" element={<NotFound/>}/>
