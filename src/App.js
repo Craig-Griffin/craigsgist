@@ -1,7 +1,7 @@
 import React from "react"
 import { Routes, Route, Link } from "react-router-dom"
 
-import {Home} from "./components/Home"
+import Home from "./components/Home"
 import {About} from "./components/About"
 import {Outdoors} from "./components/Outdoors"
 import Photos from "./components/Photos"
