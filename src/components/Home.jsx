@@ -44,12 +44,12 @@ class Home extends React.Component {
         return  (
 
             <div>
-                <header className={"py-5 bg-light border-bottom mb-4"}>
+                <header className={"py-5 bg-light border-bottom mb-4 header-background"}>
 
                     <div className={"container"}>
                         <div className={"text-center my-5"}>
-                            <h1 className={"fw-bolder"}>Welcome to Craig's Gist!</h1>
-                            <p className={"lead mb-0"}> An intriguing mix of outdoor adventures, computer science and other madness   </p>
+                            <h1 className={"fw-bolder"} style={{color:"white"}}>Welcome to Craig's Gist!</h1>
+                            <p className={"lead mb-0"} style={{color:"white"}}> A mix of outdoor adventures, computer science and other madness!</p>
                         </div>
                     </div>
                 </header>

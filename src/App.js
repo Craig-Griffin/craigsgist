@@ -12,13 +12,14 @@ import  'react-bootstrap/Button';
 import {Container, Nav, Navbar, NavDropdown} from "react-bootstrap";
 
 import "./scss/custom.scss"
+import {GearReviews} from "./components/GearReviews";
 
 function App() {
     return (
         <div className="App">
             <Navbar collapseOnSelect expand="lg" bg="light" variant="light">
                 <Container>
-                    <Navbar.Brand className={"logo"}> <Link className={"logo"} to="/">Craig's Gist</Link></Navbar.Brand>
+                    <Navbar.Brand className={"logo "}> <Link className={"logo"} to="/">Craig's Gist</Link></Navbar.Brand>
                     <Navbar.Toggle aria-controls="responsive-navbar-nav" />
                     <Navbar.Collapse id="responsive-navbar-nav">
 
@@ -39,7 +40,7 @@ function App() {
                                 <NavDropdown.Item><Nav.Link as={Link}  to="outdoors">Rock climbing</Nav.Link></NavDropdown.Item>
                                 <NavDropdown.Item><Nav.Link as={Link}  to="outdoors">Road biking</Nav.Link></NavDropdown.Item>
                                 <NavDropdown.Divider />
-                                <NavDropdown.Item><Nav.Link as={Link} to="outdoors">Gear Reviews</Nav.Link></NavDropdown.Item>
+                                <NavDropdown.Item><Nav.Link as={Link} to="gear-reviews">Gear Reviews</Nav.Link></NavDropdown.Item>
                             </NavDropdown>
 
                             <NavDropdown title="Photos" id="collapsible-nav-dropdown">
@@ -73,6 +74,7 @@ function App() {
                     <Route path="/" element={<Home/>}/>
                     <Route path="about" element={<About/>}/>
                     <Route path="outdoors/*" element={<Outdoors/>}/>
+                    <Route path="gear-reviews/*" element={<GearReviews/>}/>
                     <Route path="photos" element={<Photos/>}/>
                     <Route path="lab" element={<Lab/>}/>
                     <Route path="*" element={<NotFound/>}/>
